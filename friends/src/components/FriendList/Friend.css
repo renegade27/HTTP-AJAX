@@ -1,0 +1,19 @@
+.friend-wrapper {
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 5%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    background-color: lightcoral;
+}
+
+p {
+    text-align: center;
+    width: 100%;
+}
+
+.friend-wrapper:last-child {
+    margin-bottom: 5%;
+}
