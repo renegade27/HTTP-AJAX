@@ -38,7 +38,7 @@ class FriendList extends Component {
         return (
             <>
             <FriendForm sendData={this.sendData} type='create'/>
-            { this.state.data.map(item => <Friend friend={item} buttonHelper={this.buttonHelper}/>) }
+            { this.state.data.map(item => <Friend friend={item} key={item.id} buttonHelper={this.buttonHelper}/>) }
             </>
         );
     }

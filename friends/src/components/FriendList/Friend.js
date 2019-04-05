@@ -8,9 +8,9 @@ class Friend extends Component {
             edit : false,
             newFriend : {
                 id : this.props.friend.id,
-                name : '',
-                age : '',
-                email : ''
+                name : this.props.friend.name,
+                age : this.props.friend.age,
+                email : this.props.friend.email
             }
         }
     }
@@ -39,14 +39,14 @@ class Friend extends Component {
             <form
                 className="edit-form"
                 onSubmit={(e) => {
-                    setTimeout(this.setState({edit:false}), 5000)
+                    setTimeout(this.setState({edit:false}), 1000)
                     this.props.buttonHelper(e, this.state.newFriend)
                 }}
             >   
                 <input 
                         className="edit-input" 
                         placeholder="Name" 
-                        value={this.state.name}
+                        value={this.props.friend.name}
                         name='name'
                         type='text' 
                         onChange={this.inputChange}
@@ -54,7 +54,7 @@ class Friend extends Component {
                 <input 
                         className="edit-input" 
                         placeholder="Age" 
-                        value={this.state.age}
+                        value={this.props.friend.age}
                         name='age'
                         type='text' 
                         onChange={this.inputChange}
@@ -62,7 +62,7 @@ class Friend extends Component {
                 <input 
                         className="edit-input" 
                         placeholder="Email" 
-                        value={this.state.email}
+                        value={this.props.friend.email}
                         name='email'
                         type='text' 
                         onChange={this.inputChange}
