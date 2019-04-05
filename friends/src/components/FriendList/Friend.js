@@ -46,7 +46,7 @@ class Friend extends Component {
                 <input 
                         className="edit-input" 
                         placeholder="Name" 
-                        value={this.props.friend.name}
+                        value={this.state.newFriend.name}
                         name='name'
                         type='text' 
                         onChange={this.inputChange}
@@ -54,7 +54,7 @@ class Friend extends Component {
                 <input 
                         className="edit-input" 
                         placeholder="Age" 
-                        value={this.props.friend.age}
+                        value={this.state.newFriend.age}
                         name='age'
                         type='text' 
                         onChange={this.inputChange}
@@ -62,7 +62,7 @@ class Friend extends Component {
                 <input 
                         className="edit-input" 
                         placeholder="Email" 
-                        value={this.props.friend.email}
+                        value={this.state.newFriend.email}
                         name='email'
                         type='text' 
                         onChange={this.inputChange}
