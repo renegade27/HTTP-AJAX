@@ -1,0 +1,32 @@
+.friend-form {
+    width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+input:last-of-type {
+    margin-bottom: 10%;
+}
+
+input {
+    margin: 5% 0;
+    width: 85%;
+    border-radius: 5px;
+    text-align: center;
+    background-color: orchid;
+    font-weight: bolder;
+    font-size: 16px;
+    opacity: 0.65;
+    height: 40px;
+}
+
+button { 
+    width: 100%;
+    text-align: center;
+    background-color: orchid;
+    height: 75px;
+    font-size: 32px;
+    border-radius: 5px;
+}
